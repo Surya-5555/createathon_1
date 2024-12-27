@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Safety Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+           background: conic-gradient(from 0deg, #ff7e5f, #feb47b);
+        }
+
+        header {
+            width: 100%;
+            padding: 15px 20px;
+            background: #4e54c8;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .back-btn {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            background: #ff5722;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background: #e64a19;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #4e54c8;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .question h3 {
+            font-size: 1.2rem;
+        }
+
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            background: #4e54c8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #3b3f9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Women Safety Quiz</h1>
+        <nav>
+            <a href="C:\Users\angai\OneDrive\Desktop\mainpage01.html" class="back-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h2>Test Your Knowledge on Women Safety</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. What should you do if you feel unsafe while walking alone at night?</h3>
+                <label><input type="radio" name="q1" value="a"> Call a friend or family member</label><br>
+                <label><input type="radio" name="q1" value="b"> Take a shortcut through a dark alley</label><br>
+                <label><input type="radio" name="q1" value="c"> Ignore the feeling and keep walking</label><br>
+                <label><input type="radio" name="q1" value="d"> None of the above</label>
+            </div>
+            
+            <div class="question">
+                <h3>2. What is the emergency helpline number for women in India?</h3>
+                <label><input type="radio" name="q2" value="a"> 100</label><br>
+                <label><input type="radio" name="q2" value="b"> 101</label><br>
+                <label><input type="radio" name="q2" value="c"> 102</label><br>
+                <label><input type="radio" name="q2" value="d"> 1091</label>
+            </div>
+
+                       
+            <div class="question">
+                <h3>3. What should you do if someone is following you and you feel threatened?</h3>
+                <label><input type="radio" name="q20" value="a"> Confront them directly</label><br>
+                <label><input type="radio" name="q20" value="b"> Find a crowded place and ask for help</label><br>
+                <label><input type="radio" name="q20" value="c"> Run as fast as you can</label><br>
+                <label><input type="radio" name="q20" value="d"> Go to a secluded area</label>
+            </div>
+              
+             <div class="question">
+                <h3>4. Which of the following is designed for womens safety?</h3>
+                <label><input type="radio" name="q20" value="a"> instagram</label><br>
+                <label><input type="radio" name="q20" value="b"> safer women</label><br>
+                <label><input type="radio" name="q20" value="c"> snapchat</label><br>
+                <label><input type="radio" name="q20" value="d"> tiktok</label>
+            </div>
+            <div class="question">
+                <h3>5.what should you avoid doing alone at night? </h3>
+                <label><input type="radio" name="q20" value="a"> walking on well lit areas</label><br>
+                <label><input type="radio" name="q20" value="b"> walking in dark and lone places</label><br>
+                <label><input type="radio" name="q20" value="c"> call and speak to parent</label><br>
+                <label><input type="radio" name="q20" value="d"> book a taxi</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById("quiz-form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Done");
+        });
+    </script>
+</body>
+</html>
